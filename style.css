@@ -525,6 +525,58 @@ button:hover {
 
 }
 
+/* === Adaptation mobile pour la timeline (section .customA1) === */
+@media screen and (max-width: 600px) {
+  /* Ajustement du titre pour réduire les gros espacements */
+  .customA1 .h1-F {
+    padding: 60px 0;
+    font-size: 32px;
+  }
+  
+  /* Réorganisation de la frise */
+  .customA1 .box-timeline {
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  /* On masque la ligne verticale (pour éviter un débordement) */
+  .customA1 .ligne {
+    display: none;
+  }
+  
+  /* Les pastilles deviennent statiques et se centrent */
+  .customA1 .rond {
+    position: relative;
+    margin: 20px auto;
+    left: auto;
+    transform: none;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  
+  /* Les boîtes de contenu prennent une largeur adaptée et se placent en flux normal */
+  .customA1 .box {
+    position: relative;
+    width: 90%;
+    left: auto;
+    transform: none;
+    margin: 20px auto;
+  }
+  
+  /* On force les positions des classes spécifiques pour éviter les positionnements absolus */
+  .customA1 .b1,
+  .customA1 .b2,
+  .customA1 .b3,
+  .customA1 .b4 {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin: 20px auto;
+  }
+}
+
 
 
 
